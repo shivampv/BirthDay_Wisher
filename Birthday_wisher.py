@@ -6,7 +6,7 @@ import time
 from dotenv import load_dotenv
 import schedule
 
-print("\n--- Birthday Wisher ---")
+print("\n--- Happy Birthday Wisher ---")
 
 # Load env file check the .env file for instruction
 load_dotenv()
@@ -15,6 +15,8 @@ my_password = os.getenv("APP_PASSWORD")
 
 # On which time its should check 00:00 means 12AM  (24hr)format. 
 timestamp = '00:00'
+
+
 
 # Add friends details
 def add_friend():
@@ -62,7 +64,7 @@ def continuous_check():
         schedule.run_pending()
         time.sleep(1)
 
-# Main menu
+# Main menu 
 def main_menu():
     while True:
         print("1. Add a Friend")
