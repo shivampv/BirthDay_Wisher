@@ -26,7 +26,7 @@ def add_friend():
     with open("friends.csv", "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow([name, email, dob])
-    print(f"{name}'s details have been saved!")
+    print(f"{name}'s details have been saved successfully!")
 
 # Check for birthdays and send emails
 def check_and_send_birthday_emails():
